@@ -19,33 +19,72 @@
     <title>Операторы if...else</title>
 </head>
 
-<body>
-    <div class="wrapper">
-        <header></header>
-        <main class="ifelse-main__container">
-
-            <div class="ifelse-ifelse">
-                <h3>Операторы if...else</h3>
-                <p><strong>В JavaScript есть следующие условные выражения:</strong></p>
-                <ul type="disc">
-                    <li>if, чтобы указать блок кода, который нужно выполнить, если указанное условие истинно (true)</li>
-                    <li>else, чтобы указать блок кода, который будет выполнен, если то же условие ложно (false)</li>
-                    <li>else if, чтобы указать новое условие для проверки, если первое условие ложно (false)</li>
+<header class="header">
+    <div class="header__container">
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="api.html">API</a></li>
+            <li><a href="arrays.html">Arrays</a></li>
+            <li><a href="async.html">Async</a></li>
+            <li><a href="dom.html">DOM</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="functions.html">Functions</a></li>
+            <li><a href="glossary.html">Glossary</a></li>
+            <li><a href="ifelse.html">If Else</a></li>
+            <li><a href="prototypes.html">Prototypes</a></li>
+            <li><a href="regular.html">Regular</a></li>
+            <li><a href="string.html">String</a></li>
+            <li><a href="this.html">this</a></li>
+            <li><a href="timedate.html">TimeDate</a></li>
+            <li><a href="types.html">Types</a></li>
+            <li><a href="variables.html">Variables</a></li>
+            <li><a href="web.html">Web</a></li>
+        </ul>
+        <nav>
+            <div class="nav-wrapper teal lighten-1">
+                <a href="index.html" class="brand-logo left"><img src="./assets/icons8-cherry-100.png" alt="cherry"></a>
+                <ul class="right">
+                    <li><a class="dropdown-trigger" href="#" data-target="dropdown1">Разделы:<i
+                                class="material-icons right">arrow_drop_down</i></a></li>
                 </ul>
-                <p>Оператор if…else является условным оператором, который позволяет выполнять определенный блок кода,
-                    если выполняется определенное условие, и следующий блок кода, если это условие не выполняется. </p>
-                <p>Если условие истинно, будет выполнен код внутри первого блока, окруженный фигурными скобками {}. Если
-                    условие имеет значение false, вместо него будет выполнен код внутри второго блока.</p>
-                <p>ПРОСТЫМИ СЛОВАМИ:
+            </div>
+        </nav>
+
+    </div>
+</header>
+<main>
+    <div class="ifelse-main__container">
+
+        <div class="ifelse-ifelse">
+            <h2>Операторы if...else</h2>
+            <p><strong>В JavaScript есть следующие условные выражения:</strong></p>
+            <ul class="collection">
+                <li class="collection-item"><strong>if</strong>- чтобы указать блок кода, который нужно
+                    выполнить,
+                    если указанное
+                    условие
+                    истинно (true)</li>
+                <li class="collection-item"><strong>else</strong> - чтобы указать блок кода, который будет
+                    выполнен,
+                    если то же
+                    условие ложно (false)</li>
+                <li class="collection-item"><strong>else if </strong>- чтобы указать новое условие для проверки,
+                    если первое условие
+                    ложно (false)</li>
+            </ul>
+
+            <p>Оператор if…else является условным оператором, который позволяет выполнять определенный блок кода,
+                если выполняется определенное условие, и следующий блок кода, если это условие не выполняется. </p>
+            <p>Если условие истинно, будет выполнен код внутри первого блока, окруженный фигурными скобками { }. Если
+                условие имеет значение false, вместо него будет выполнен код внутри второго блока.</p>
+            <div class="card-panel amber lighten-5"><strong>ПРОСТЫМИ СЛОВАМИ:
                     «if…else» - это то же самое, что «если…то».
                     Фразой «если ...» определяется условие. Если условие выполняется, то мы выполняем часть, описанную
                     фразой «то...». Если условие не выполняется, то нужно смотреть на фразу «В противном случае ...»,
-                    когда она есть.</p>
+                    когда она есть.</strong></div>
+            <h4>СИНТАКСИС:</h4>
 
-                <h4>СИНТАКСИС:</h4>
-
-                <div class="ifelse-code">
-                    <pre>
+            <div class="ifelse-code">
+                <pre>
                         <code class="js">
                         if (условие) {
                             console.log(‘код выполняется, если условие истинное (true)')
@@ -54,27 +93,31 @@
                         }
                         </code>
                     </pre>
-                </div>
-                <p>Обратите внимание, что if - это строчные буквы. Заглавные буквы (If или IF) приведут к ошибке
-                    JavaScript.</p>
-                <p>В самом простом случае, условие должно вычисляться в логический тип данных: true, либо false (истина
-                    или ложь).</p>
-                <p>Такие выражения получаются при использовании операторов сравнения:</p>
-                <ul type="disc">
-                    <li>==</li>
-                    <li>===</li>
-                    <li>></li>
-                    <li>
-                        << /li>
-                    <li>>=</li>
-                    <li>
-                        <=< /li>
-                    <li>!==</li>
-                    <li>!=</li>
-                </ul>
-                <h4>ПРИМЕР С ИСПОЛЬЗОВАНИЕМ ОПЕРАТОРОВ СРАВНЕНИЯ:</h4>
-                <div class="ifelse-code">
-                    <pre>
+            </div>
+            <div class="card-panel amber lighten-5"><strong>Обратите внимание, что if - это строчные буквы. Заглавные
+                    буквы (If
+                    или IF)
+                    приведут к
+                    ошибке
+                    JavaScript.</strong></div>
+            <p>В самом простом случае, условие должно вычисляться в логический тип данных: true, либо false (истина
+                или ложь).</p>
+            <p><strong>Такие выражения получаются при использовании операторов сравнения:</strong></p>
+            <ul class="collection">
+                <li class="collection-item amber lighten-5">== равно</li>
+                <li class="collection-item amber lighten-5">=== строго равно</li>
+                <li class="collection-item amber lighten-5"> > больше</li>
+                <li class="collection-item amber lighten-5">
+                    < меньше</li>
+                <li class="collection-item amber lighten-5"> >= больше или равно</li>
+                <li class="collection-item amber lighten-5">
+                    <= меньше или равно</li>
+                <li class="collection-item amber lighten-5"> !== строго не равно</li>
+                <li class="collection-item amber lighten-5"> != не равно</li>
+            </ul>
+            <h5>ПРИМЕР С ИСПОЛЬЗОВАНИЕМ ОПЕРАТОРОВ СРАВНЕНИЯ:</h5>
+            <div class="ifelse-code">
+                <pre>
                         <code class="js">
                             const num = 200
                             let result
@@ -88,24 +131,25 @@
                             console.log(result)
                         </code>
                     </pre>
-                </div>
-                <p>Чтобы понять, какой блок кода выполнится, нужно запомнить правила приведения разных типов к
-                    логическому. Важное правило:</p>
-                <p>Все, что не приводится к false, будет true</p>
-                <ul type="disc">
-                    <li>0</li>
-                    <li>-0</li>
-                    <li>''</li>
-                    <li>false</li>
-                    <li>null</li>
-                    <li>undefined</li>
-                    <li>NaN</li>
-                    <li>0n (тип BigInt)</li>
-                </ul>
-                <h3>else...if</h3>
-                <p><strong>Если мы хотим связать в цепочку несколько условий, то мы используем else…if:</strong></p>
-                <div class="ifelse-code">
-                    <pre>
+            </div>
+            <p>Чтобы понять, какой блок кода выполнится, нужно запомнить правила приведения разных типов к
+                логическому. Важное правило:</p>
+            <div class="card-panel amber lighten-5"><strong>Все, что не приводится к false, будет true</strong></div>
+            <h5>8 значений, которые приводятся к false:</h5>
+            <ul>
+                <li>0</li>
+                <li>-0</li>
+                <li>''</li>
+                <li>false</li>
+                <li>null</li>
+                <li>undefined</li>
+                <li>NaN</li>
+                <li>0n (тип BigInt)</li>
+            </ul>
+            <h3>else...if</h3>
+            <p><strong>Если мы хотим связать в цепочку несколько условий, то мы используем else…if:</strong></p>
+            <div class="ifelse-code">
+                <pre>
                         <code class="js">
                             if (условие 1) {
                                 // код выполняется, если условие 1 истинно (true)
@@ -116,13 +160,13 @@
                             }
                         </code>
                     </pre>
-                </div>
-                <p>В этом случае, если условие 1 является истинным, выполняется код внутри первого блока. Если условие 1
-                    имеет значение false, а условие 2 имеет значение true, то выполняется код внутри второго блока. Если
-                    и условие 1, и условие 2 являются ложными, то выполняется код внутри третьего блока.</p>
-                <p>НАПРИМЕР: в зависимости от веса посылки, вычисляем стоимость отправки</p>
-                <div class="ifelse-code">
-                    <pre>
+            </div>
+            <p>В этом случае, если условие 1 является истинным, выполняется код внутри первого блока. Если условие 1
+                имеет значение false, а условие 2 имеет значение true, то выполняется код внутри второго блока. Если
+                и условие 1, и условие 2 являются ложными, то выполняется код внутри третьего блока.</p>
+            <p>НАПРИМЕР: в зависимости от веса посылки, вычисляем стоимость отправки:</p>
+            <div class="ifelse-code">
+                <pre>
                         <code class="js">
                             let price = 0
                             if (weight < = 1)
@@ -139,35 +183,35 @@
                             }
                         </code>
                     </pre>
-                </div>
-                <p>Важно отметить, что код внутри каждого блока будет выполняться только один раз, а первый блок,
-                    состояние которого оценивается как true, будет единственным, который будет выполнен.
-                    Остальные блоки будут проигнорированы.</p>
-                <h3>If можно также использовать без else</h3>
-                <p>этот вариант подходит, когда мы хотим, чтобы условие было выполнено только если оно истинно (true), а
-                    в противном случае не делать ничего:</p>
-                <div class="ifelse-code">
-                    <pre>
+            </div>
+            <p>Важно отметить, что код внутри каждого блока будет выполняться только один раз, а первый блок,
+                состояние которого оценивается как true, будет единственным, который будет выполнен.
+                Остальные блоки будут проигнорированы.</p>
+            <h4>If можно также использовать без else</h4>
+            <p>Этот вариант подходит, когда мы хотим, чтобы условие было выполнено только если оно истинно (true), а
+                в противном случае не делать ничего:</p>
+            <div class="ifelse-code">
+                <pre>
         <code class="js">
             if (horoscopeSign === "Leo") {
                 console.log(‘Гороскоп на месяц для Львов’)
             }
         </code>
     </pre>
-                </div>
+            </div>
 
-                <p>НО</p>
-                <p>Условный оператор if…else можно написать в более компактном виде: с помощью тернарного оператора.</p>
-                <p>Тернарный оператор состоит из 3 операндов:
-                    условие ? выражение1 : выражение2</p>
-                <p>Если условие будет истинным (true), то оператор вернет выражение1. Если условие будет ложным (false),
-                    то оператор вернет выражение2</p>
-                <p>По механике работы тернарный оператор похож на инструкцию if...else, но позволяет писать меньше кода
-                    и записывать результат работы сразу в переменную.</p>
-                <p>Вспомним наш код и сократим его с помощью тернарного оператора:</p>
-                <p>БЫЛО</p>
-                <div class="ifelse-code">
-                    <pre>
+            <h5>Условный оператор if…else можно написать в более компактном
+                виде: с помощью тернарного оператора</h5>
+            <div class="card-panel amber lighten-5"><strong>Тернарный оператор состоит из 3 операндов:
+                    условие ? выражение1 : выражение2</strong></div>
+            <p>Если условие будет истинным (true), то оператор вернет выражение1. Если условие будет ложным (false),
+                то оператор вернет выражение2</p>
+            <p>По механике работы тернарный оператор похож на инструкцию if...else, но позволяет писать меньше кода
+                и записывать результат работы сразу в переменную.</p>
+            <p>Вспомним наш код и сократим его с помощью тернарного оператора:</p>
+            <p><strong>БЫЛО:</strong></p>
+            <div class="ifelse-code">
+                <pre>
 <code class="js">
     const num = 200
     let result
@@ -182,37 +226,37 @@
     
 </code>
 </pre>
-                </div>
-                <p>СТАЛО</p>
-                <div class="ifelse-code">
-                    <pre>
+            </div>
+            <p><strong>СТАЛО:</strong></p>
+            <div class="ifelse-code">
+                <pre>
 <code class="js">
     const num = 200
     const result = num > 200 ? "Число больше 200" : "Число меньше или равно 200"
     console.log(result)
 </code>
 </pre>
-                </div>
-                <p>Код сократился и стал устанавливать значение переменной num сразу при объявлении. Это позволило
-                    использовать const вместо let. (в чем разница между let, const а также var читай здесь)</p>
-                <p>Тернарный оператор вернул результат, который можно записать в переменную.
-                    Но результат также можно вернуть с помощью return из функции:</p>
-                <div class="ifelse-code">
-                    <pre>
+            </div>
+            <p>Код сократился и стал устанавливать значение переменной num сразу при объявлении. Это позволило
+                использовать const вместо let.</p>
+            <p>Тернарный оператор вернул результат, который можно записать в переменную.
+                Но результат также можно вернуть с помощью return из функции:</p>
+            <div class="ifelse-code">
+                <pre>
     <code class="js">
         const greeting = function(name) {
-            return name ? `Привет, ${name}!` : "Добро пожаловать, дорогой пользователь!
+            return name ? `Привет, ${name}!` : "Добро пожаловать, дорогой пользователь!"
             } 
-            console.log(greeting(‘Маша’)
-          // "Привет, Маша!""
+            console.log(greeting(‘Маша’))
+          // "Привет, Маша!"
             console.log(greeting())
-          // "Добро пожаловать, дорогой пользователь!""
+          // "Добро пожаловать, дорогой пользователь!"
     </code>
     </pre>
-                </div>
-                <p>Внутри одного тернарного оператора можно написать еще один:</p>
-                <div class="ifelse-code">
-                    <pre>
+            </div>
+            <p>Внутри одного тернарного оператора можно написать еще один:</p>
+            <div class="ifelse-code">
+                <pre>
     <code class="js">
         const num = 200
         const result = num > 200 ? "Число больше 200" : 
@@ -221,27 +265,65 @@
         // "Число равно 200"
     </code>
     </pre>
-                </div>
-                <p>В этом случае запись идентична использованию конструкций if...else if...else. Сначала проверяется
-                    первое условие, если оно ложно, то проверяется второе и так далее.</p>
+            </div>
+            <p>В этом случае запись идентична использованию конструкций if...else if...else. Сначала проверяется
+                первое условие, если оно ложно, то проверяется второе и так далее.</p>
 
-                <div class='container'>
-                    <div class="heart" id="heart"></div>
-                    <input id="input" placeholder="Нажми сюда, чтобы увидеть сердце">
-                    <button id="btn">СБРОСИТЬ СЕРДЦЕ</button>
-                    <h4>вводите цифры, чтобы увидеть сердце, убедитесь, что вы начинаете с начала списка, так как
-                        операторы if...else запускаются по порядку:</h4>
-                    <p>'1' - green</p>
-                    <p>'2' - blue</p>
-                    <p>'3' - purple</p>
-                    <p>'4' - red</p>
-                    <p>'5' - pink</p>
-                    <p>'6' - black</p>
-                    <p>'7' - for a rainbow
-                </div>
+            <h5>Давайте проверим, как работает оператор if...else на практике:</h5>
+            <p>К каждой цифре привязан определенный цвет сердца. При вводе цифр по порядку будет отображаться цвет,
+                соответствующий цифре. Так как оператор if...else запускается по-порядку, то и цифры мы должны
+                вводить,
+                начиная с 1</p>
+            <div class="ifelse-code">
+                <pre>
+        <code class="js">
+            function handleInput(e) {
+                if (e.target.value == 1) {
+                    heartEl.classList.add('green');
+                    inputEl.value = '';
+                } else if (e.target.value == 2) {
+                    heartEl.classList.add('blue');
+                    inputEl.value = '';
+                } else if (e.target.value == 3) {
+                    heartEl.classList.add('purple');
+                    inputEl.value = '';
+                } else if (e.target.value == 4) {
+                    heartEl.classList.add('red');
+                    inputEl.value = '';
+                } else if (e.target.value == 5) {
+                    heartEl.classList.add('pink');
+                    inputEl.value = '';
+                } else if (e.target.value == 6) {
+                    heartEl.classList.add('black');
+                    inputEl.value = '';
+                } else {
+                    heartEl.classList.add('else');
+                    inputEl.value = '';
+                }
+            }
+        </code>
+    </pre>
+            </div>
+            <div class="container">
+                <div class="heart" id="heart"></div>
+                <input id="input" placeholder="введи цифру от 1 до 7, чтобы увидеть сердце">
+                <button class="waves-effect waves-light btn arrays__check array-length" id="btn">сбросить
+                    результат</button>
+                <p>'1' - green</p>
+                <p>'2' - blue</p>
+                <p>'3' - purple</p>
+                <p>'4' - red</p>
+                <p>'5' - pink</p>
+                <p>'6' - black</p>
+                <p>'7' - for a rainbow</p>
+            </div>
+</main>
+<footer></footer>
 
-                <script src="./assets/libraries/highlights/highlight.min.js"></script>
-                <script>hljs.highlightAll();</script>
+
+<script src="./assets/dist/js/main.js"></script>
+<script src="./assets/libraries/highlights/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
 </body>
 
 </html>
